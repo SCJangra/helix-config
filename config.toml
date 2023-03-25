@@ -1,7 +1,7 @@
 theme = "ayu_dark"
 
 [editor]
-line-number = "relative"
+line-number = "absolute"
 mouse = true
 scrolloff = 10
 completion-trigger-len = 1
@@ -16,6 +16,7 @@ select = "block"
 
 [editor.lsp]
 display-messages = true
+display-inlay-hints = true
 
 [editor.indent-guides]
 render = true
@@ -24,6 +25,9 @@ render = true
 left = ["mode", "spinner"]
 center = ["file-type", "file-name"]
 right = ["diagnostics", "position"]
+
+[editor.soft-wrap]
+enable = true
 
 [keys.normal]
 H = "goto_previous_buffer"
